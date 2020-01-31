@@ -10,9 +10,15 @@
         <link rel="stylesheet" href="styles.css">
         <div class="mx-auto justify-content-center" style="width:15vw; margin:2vw;">
             <img id="profile_pic" src="assets/ProfilePic.png" alt="">
-            <h5 id="profile_name">Min-Hui Pan</h5>
         </div>
-
+        <h5 id="profile_name">Min-Hui Pan</h5>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector("#project_link").onclick = () => {
+                    document.querySelector("#home-tab").setAttribute('class','nav-link');
+                    document.querySelector("#projects-tab").setAttribute('class','nav-link active');
+            }})
+        </script>
 
     </head>
     <body>
@@ -35,7 +41,7 @@
                     <h4>Hello!</h4>
                     
                     <p>
-                    I'm Min-Hui, or you can call me Peggy.<br>
+                    I'm Min-Hui, or just call me Peggy.<br>
                     I graduated from National Cheng-Chi University in 2012 with a bachelor degree in statistic.
                     </p><p>
                     After graduation, I have worked in finance department for over 6 years at e-formula Technologies Inc. and Allianz Taiwan Life Insurance company. 
@@ -56,7 +62,7 @@
                     <span class="tab study">
                             - CS50's Web Programming with Python and JavaScript in edX (Now in progress)<br></span>
                 </p>
-                <p>Please take a look on my codes >> <a href="#">Projects</a><br></p>
+                <p>Please take a look on my current projects >> <a id="project_link" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a><br></p>
                 <br>
                 <h6>Contact Me</h6>
                 <p>You can reach me at <a href="mailto:mhpan.1003@gmail.com">mhpan.1003@gmail.com </a>.<br></p>
