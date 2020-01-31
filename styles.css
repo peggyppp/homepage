@@ -1,0 +1,30 @@
+#profile_pic {
+    width: 15vw; 
+    margin-bottom: 10px;
+}
+
+#profile_name {
+    text-align: center;
+}
+
+p , span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.tab {
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+}
+
+.study {
+    font-weight: bold;
+}
+
+.project_img {
+    width: 100%;
+}
+
+.project_width_img {
+    width: 25%;
+}
