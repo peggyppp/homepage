@@ -1,6 +1,5 @@
 #profile_pic {
     width: 15vw; 
-    /* margin-bottom: 10px; */
 }
 
 #profile_name {
@@ -36,9 +35,6 @@ th {
 .project_width_img {
     width: 25%;
 }
-/* .modal-dialog {
-    max-width: 70vw;
-} */
 
 .project_col {
     padding-left: 1em;
@@ -108,14 +104,6 @@ th {
     font-size: 0.7em;
 }
 
-/* @media (min-width: 576px) */
-.modal-dialog {
-    max-width: 600px;
-    margin: 1.75rem auto;
-}
-
 .home_link {
     font-size: 0.8em;
-    /* color: black; */
-    /* text-decoration: underline; */
 }
