@@ -28,6 +28,6 @@ p , span{
 .project_width_img {
     width: 25%;
 }
-.modal-dialog {
-    max-width: 90vw;
-}
+/* .modal-dialog {
+    max-width: 70vw;
+} */
