@@ -31,3 +31,17 @@ p , span{
 /* .modal-dialog {
     max-width: 70vw;
 } */
+
+#content {
+    
+}
+
+.project_icon {
+    height: 0.8rem;
+    margin-right: 0.2rem;
+    max-width: 0.8rem;
+}
+
+.project_tools {
+    font-size: 0.8rem;
+}
