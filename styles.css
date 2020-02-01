@@ -21,8 +21,16 @@ p , span{
     font-weight: bold;
 }
 
+td {
+    padding: 0px;
+}
+
+th {
+    padding: 0px;
+}
 .project_img {
     width: 100%;
+    
 }
 
 .project_width_img {
@@ -32,16 +40,82 @@ p , span{
     max-width: 70vw;
 } */
 
-#content {
+.project_col {
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+.project_img_col {
+    width: 50%;
     
 }
 
 .project_icon {
-    height: 0.8rem;
-    margin-right: 0.2rem;
-    max-width: 0.8rem;
+    height: 1em;
+    margin: 0.2em;
+    max-width: 1em;
 }
 
 .project_tools {
-    font-size: 0.8rem;
+    font-size: 0.5em;
+    width: 35%;
+}
+
+.title_inCol {
+    font-size: 0.8em; 
+    font-weight: bold; 
+    margin-top: 0.3em;
+    margin-bottom: 0px;
+}
+
+.project_title {
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.project_title:hover {
+    font-size: 1em;
+    font-weight: bolder;
+    color: black;
+    background-color: wheat;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.project_descript {
+    font-size: 0.8em;
+}
+
+.project_link , .links {
+    font-size: 0.8em;
+    color: rgb(148, 30, 30);
+    background-color: rgba(221, 154, 176, 0.219);
+    border: 1px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.project_link:hover , .project_link:active , .links:hover , .links:active {
+    background-color: rgba(124, 64, 167, 0.808);
+    font-size: 110%;
+    color: white;
+    text-decoration: none;
+}
+
+.project_tool {
+    font-size: 0.7em;
+}
+
+/* @media (min-width: 576px) */
+.modal-dialog {
+    max-width: 600px;
+    margin: 1.75rem auto;
+}
+
+.home_link {
+    font-size: 0.8em;
+    /* color: black; */
+    /* text-decoration: underline; */
 }
