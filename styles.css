@@ -9,15 +9,17 @@
 p , span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
+    font-weight: 200;
 }
 
 .tab {
-    padding-left: 1.2rem;
-    padding-top: 1rem;
+    width: 90%;
+    display: inline-block"
 }
 
 .study {
-    font-weight: bold;
+    font-weight: 600;
+    /* font-weight: bold; */
 }
 
 td {
@@ -106,4 +108,5 @@ th {
 
 .home_link {
     font-size: 0.8em;
+    font-weight: normal;
 }
