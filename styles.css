@@ -42,6 +42,10 @@ th {
     padding-left: 1em;
     padding-right: 1em;
     
+    
+}
+.project_col:hover ,.project_col:active {
+    background-color: rgba(238, 185, 71, 0.171);
 }
 
 .project_img_col {
@@ -76,10 +80,9 @@ th {
 .project_title:hover {
     font-size: 1em;
     font-weight: bolder;
-    color: black;
-    background-color: wheat;
+    color: Crimson;
     font-style: normal;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .project_descript {
@@ -97,7 +100,7 @@ th {
 
 .project_link:hover , .project_link:active , .links:hover , .links:active {
     background-color: rgba(124, 64, 167, 0.808);
-    font-size: 110%;
+    font-size: 105%;
     color: white;
     text-decoration: none;
 }
@@ -109,4 +112,9 @@ th {
 .home_link {
     font-size: 0.8em;
     font-weight: normal;
+}
+
+.imgshow {
+    padding-left: 5%;
+    padding-right: 5%;
 }

@@ -8,10 +8,10 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
-        <div class="mx-auto justify-content-center" style="width:15vw; margin:2vw;">
+        <!-- <div class="mx-auto justify-content-center" style="width:15vw; margin:2vw;">
             <img id="profile_pic" src="assets/ProfilePic.png" alt="">
         </div>
-        <h5 id="profile_name">Min-Hui Pan</h5>
+        <h5 id="profile_name">Min-Hui Pan</h5> -->
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector("#project_link").onclick = () => {
@@ -22,9 +22,13 @@
         <title>Min-Hui Pan</title>
     </head>
     <body>
-        <div class="mx-auto" id="content" style="width:85vw;">
+        <div class="mx-auto justify-content-center" style="width:15vw; margin:2vw;">
+            <img id="profile_pic" src="assets/ProfilePic.png" alt="">
+        </div>
+        <h5 id="profile_name">Min-Hui Pan</h5>
+        <div class="mx-auto" id="content" style="width:80vw;">
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-                <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:80vw;margin: 0 auto;">
+                <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:70vw;margin: 0 auto;">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel"></h5>
@@ -40,8 +44,8 @@
                                 <p class="modal-tools"></p>   
                                 <p class="modal-links"></p>        
                             </div>
-                            <div id="putimg">
-                                <div id="imgshow"></div>
+                            <div class="putimg">
+                                <div class="imgshow"></div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +78,7 @@
                     </p><p class=" text-justify">
                     After graduation, I've worked in finance dept. for over 6 years at e-formula Technologies Inc. and Allianz Taiwan Life Insurance company. 
                     
-                    Due to the analysis job requirements, I started to get in touch with VBA and opened a new world of programming.<br>
+                    Due to the analysis job requirements, I started to get in touch with VBA and found a new world of programming.<br>
                 </p><p class=" text-justify">
                     In 2018, I’ve started self-learning Python in Cousera and accomplished 2 courses:<br></p>
                 <p>
@@ -86,10 +90,10 @@
                 </p>
 
                 <p class=" text-justify">
-                    In the 2nd half of 2019, I decided to change careers from a financial analyst to a python developer. I kept studying and programing:<br></p>
+                    In the 2nd half of 2019, I decided to change careers from a financial analyst to a Python developer. I kept learning and programing:<br></p>
                 <p>
                     <span style="vertical-align: top;padding-left: 1rem;">-</span>
-                    <span class="tab study">Head First Python <a class="home_link" href="#" target="_blank">[My first app]</a><br></span>
+                    <span class="tab study">Head First Python <a class="home_link" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Vsearch4web" data-description="A little service for user searching specific letters in a specific sentence. Constructed with Python, Flask and MariaDB(MySQL)." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "MySQL", "url":"assets/icon/icon_mysql.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/HF4P_Project"}, {"name": "Demo video", "url": "https://youtu.be/bYPVZrx8iuc"}]' data-img="assets/Projects/img_HF4P.png"> My first project </a><br></span>
                     <span style="vertical-align: top;padding-left: 1rem;">-</span>
                     <span class="tab study">CS50's Web Programming with Python and JavaScript in edX (Now in progress)<br></span>
                 </p>
@@ -100,9 +104,9 @@
                 <br>
                 <h6>Links</h6>
                 <p>
-                    ＊ <a class="home_link" href="https://github.com/peggyppp">GitHub</a><br>
-                    ＊ <a class="home_link" href="https://www.linkedin.com/in/min-hui-pan-20885b117/">LinkedIn</a><br>
-                    ＊ <a class="home_link" href="https://leetcode.com/mhpan/">LeetCode</a><br>
+                    ＊ <a class="home_link" href="https://github.com/peggyppp" target="_blank">GitHub</a><br>
+                    ＊ <a class="home_link" href="https://www.linkedin.com/in/min-hui-pan-20885b117/" target="_blank">LinkedIn</a><br>
+                    ＊ <a class="home_link" href="https://leetcode.com/mhpan/" target="_blank">LeetCode</a><br>
                 </p>
                 </div>
                 
@@ -110,54 +114,24 @@
                     <br>
                     <div class="row no-gutters justify-content-center">
                         <div class="col-12 col-sm-6  col-md-6 project_col">
-                            <table class="table table-sm" data-toggle="modal" data-target="#exampleModal" data-title="Guess A number" data-description="A little game(Bulls and Cows 猜數字). " data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "Heroku", "url": "https://guess-aabb.herokuapp.com/"}, {"name": "GitHub", "url":"https://github.com/peggyppp/Project_AABB"}]' data-img="assets/Projects/img_aabb.png">
+                            <table class="table table-sm project_col_hover" data-toggle="modal" data-target="#exampleModal" data-title="mhpan.ntcu.me" data-description="This website" data-tools='[{"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "JavaScript", "url":"assets/icon/icon_javascript.png"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "Web", "url": "https://mhpan.ntcu.me/"}, {"name": "GitHub", "url":"https://github.com/peggyppp/homepage"}]' data-img="assets/Projects/img_homepage.png">
                                 <tbody>
                                 <tr>
-                                    <td  class="project_img_col">
-                                        <img class="project_img" src="assets/Projects/img_aabb.png" alt="">    <!-- no. 1 -->
+                                    <td class="project_img_col">
+                                        <img class="project_img" src="assets/Projects/img_homepage.png" alt="">    <!-- no. 1 -->
                                     </td>
                                 
                                     <td>
-                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Guess A number" data-description="A little game(Bulls and Cows 猜數字). " data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "Heroku", "url": "https://guess-aabb.herokuapp.com/"}, {"name": "GitHub", "url":"https://github.com/peggyppp/Project_AABB"}]' data-img="assets/Projects/img_aabb.png">Guess a number</a>
-                                        <p class="project_descript">A little game(Bulls and Cows 猜數字). </p>
+                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="mhpan.ntcu.me" data-description="This website" data-tools='[{"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "JavaScript", "url":"assets/icon/icon_javascript.png"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "Web", "url": "http://mhpan.nctu.me/"}, {"name": "GitHub", "url":"https://github.com/peggyppp/homepage"}]' data-img="assets/Projects/img_homepage.png">mhpan.ntcu.me</a>
+                                        <p class="project_descript">This website</p>
                                         <p class="title_inCol">Tools</p>
-                                        <img class="project_icon" src="assets/icon/icon_python.png" title="Python">
-                                        <img class="project_icon" src="assets/icon/icon_flask.png" title="Flask">
                                         <img class="project_icon" src="assets/icon/icon_html.png" title="HTML">
                                         <img class="project_icon" src="assets/icon/icon_css.jpg" title="CSS">
-                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="BootStrap">
+                                        <img class="project_icon" src="assets/icon/icon_javascript.png" title="JavsScript">
+                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="Bootstrap">
                                         <p class="title_inCol" style="">Links</p>
-                                        <a class="links" href="https://guess-aabb.herokuapp.com/" target="_blank">Heroku Run</a>
-                                        <a class="links" href="https://github.com/peggyppp/Project_AABB" target="_blank">GitHub</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div>
-                        
-                        <div class="col-12 col-sm-6  col-md-6 project_col">
-                            <table class="table table-sm" data-toggle="modal" data-target="#exampleModal" data-title="Book Review System" data-description="A book review website for sign-in users submit their reviews. Using PostgreSQL and python - flask." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "PostgreSQL", "url":"assets/icon/icon_postgresql.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project1"}, {"name": "Demo video", "url": "https://youtu.be/cx-j0U-ZyYE"}]' data-img="assets/Projects/img_project1.png">
-                                <tbody>
-                                <tr>
-                                    <td  class="project_img_col">
-                                        <img class="project_img" src="assets/Projects/img_project1.png" alt="">    <!-- no. 2 -->
-                                    </td>
-                                
-                                    <td>
-                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Book Review System" data-description="A book review website for sign-in users submit their reviews. Using PostgreSQL and python - flask." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "PostgreSQL", "url":"assets/icon/icon_postgresql.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project1"}, {"name": "Demo video", "url": "https://youtu.be/cx-j0U-ZyYE"}]' data-img="assets/Projects/img_project1.png">Book Review System</a>
-                                        
-                                        <p class="project_descript">A book review website for sign-in users submit their reviews. Using PostgreSQL and python - flask.</p>
-                                        <p class="title_inCol">Tools</p>
-                                        <img class="project_icon" src="assets/icon/icon_python.png" title="Python">
-                                        <img class="project_icon" src="assets/icon/icon_flask.png" title="Flask">
-                                        <img class="project_icon" src="assets/icon/icon_postgresql.png" title="PostgreSQL">
-                                        <img class="project_icon" src="assets/icon/icon_html.png" title="HTML">
-                                        <img class="project_icon" src="assets/icon/icon_css.jpg" title="CSS">
-                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="BootStrap">
-                                        <p class="title_inCol" style="">Links</p>
-                                        
-                                        <a class="links" href="https://github.com/peggyppp/CS50W_Project1" target="_blank">GitHub</a>
-                                        <a class="links" href="https://youtu.be/cx-j0U-ZyYE" target="_blank">Demo Video</a>
+                                        <a class="links" href="http://mhpan.nctu.me/" target="_blank">Web</a>
+                                        <a class="links" href="https://github.com/peggyppp/homepage" target="_blank">GitHub</a> <p style="height:0.5rem; margin:0px;"></p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -165,28 +139,29 @@
                         </div>
 
                         <div class="col-12 col-sm-6  col-md-6 project_col">
-                            <table class="table table-sm" data-toggle="modal" data-target="#exampleModal" data-title="Online Message Service" data-description="A online message service based by python - flask framework, with javaScript file." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "JavaScript", "url":"assets/icon/icon_javascript.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "Demo video", "url": "https://youtu.be/usYs1pG2hOs"}]' data-img="assets/Projects/img_project2.png">
+                            <table class="table table-sm project_col_hover" data-toggle="modal" data-target="#exampleModal" data-title="Online Message Service" data-description="A online message service based by Python - Flask framework, web socket, and JavaScript." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "JavaScript", "url":"assets/icon/icon_javascript.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "Demo video", "url": "https://youtu.be/usYs1pG2hOs"}]' data-img="assets/Projects/img_project2.png">
                                 <tbody>
                                 <tr>
                                     <td  class="project_img_col">
-                                        <img class="project_img" src="assets/Projects/img_project2.png" alt="">    <!-- no. 3 -->
+                                        <img class="project_img" src="assets/Projects/img_project2.png" alt="">    <!-- no. 2 -->
                                     </td>
                                 
                                     <td>
-                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Online Message Service" data-description="A online message service based by python - flask framework, with javaScript file." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "JavaScript", "url":"assets/icon/icon_javascript.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "Demo video", "url": "https://youtu.be/usYs1pG2hOs"}]' data-img="assets/Projects/img_project2.png">Online Message Service</a>
+                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Online Message Service" data-description="A online message service based by Python - Flask framework, web socket, and JavaScript." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "JavaScript", "url":"assets/icon/icon_javascript.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "Demo video", "url": "https://youtu.be/usYs1pG2hOs"}]' data-img="assets/Projects/img_project2.png">Online Message Service</a>
                                         
-                                        <p class="project_descript">A online message service based by python - flask framework, with javaScript file.</p>
+                                        <p class="project_descript">A online message service based by Python - Flask framework, web socket, and JavaScript.</p>
                                         <p class="title_inCol">Tools</p>
                                         <img class="project_icon" src="assets/icon/icon_python.png" title="Python">
                                         <img class="project_icon" src="assets/icon/icon_flask.png" title="Flask">
                                         <img class="project_icon" src="assets/icon/icon_javascript.png" title="JavsScript">
                                         <img class="project_icon" src="assets/icon/icon_html.png" title="HTML">
                                         <img class="project_icon" src="assets/icon/icon_css.jpg" title="CSS">
-                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="BootStrap">
+                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="Bootstrap">
 
                                         <p class="title_inCol" style="">Links</p>
                                         <a class="links" href="https://github.com/peggyppp/CS50W_Project2" target="_blank">GitHub</a>
                                         <a class="links" href="https://youtu.be/usYs1pG2hOs" target="_blank">Demo Video</a>
+                                        <p style="height:0.5rem; margin:0px;"></p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -194,30 +169,121 @@
                         </div>
 
                         <div class="col-12 col-sm-6  col-md-6 project_col">
-                            <table class="table table-sm" data-toggle="modal" data-target="#exampleModal" data-title="Have you seen?" data-description="A pure html website of introducing my cats, made with CSS and BootStrap." data-tools='[{"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "View on Web", "url": "https://peggyppp.github.io/CS50W_Project0/"}]' data-img="assets/Projects/img_project0.png">
+                            <table class="table table-sm project_col_hover" data-toggle="modal" data-target="#exampleModal" data-title="Guess A number" data-description="A little game(Bulls and Cows 猜數字). " data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "Web", "url": "https://guess-aabb.herokuapp.com/"}, {"name": "GitHub", "url":"https://github.com/peggyppp/Project_AABB"}]' data-img="assets/Projects/img_aabb.png">
                                 <tbody>
                                 <tr>
-                                    <td  class="project_img_col">
-                                        <img class="project_img" src="assets/Projects/img_project0.png" alt="">    <!-- no. 4 -->
+                                    <td class="project_img_col">
+                                        <img class="project_img" src="assets/Projects/img_aabb.png" alt="">    <!-- no. 3 -->
                                     </td>
                                 
                                     <td>
-                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Have you seen?" data-description="A pure html website of introducing my cats, made with CSS and BootStrap." data-tools='[{"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "BootStrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "View on Web", "url": "https://peggyppp.github.io/CS50W_Project0/"}]' data-img="assets/Projects/img_project0.png">Have you seen?</a>
-                                        
-                                        <p class="project_descript">A pure html website of introducing my cats, made with CSS and BootStrap.</p>
+                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Guess A number" data-description="A little game(Bulls and Cows 猜數字). " data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "Web", "url": "https://guess-aabb.herokuapp.com/"}, {"name": "GitHub", "url":"https://github.com/peggyppp/Project_AABB"}]' data-img="assets/Projects/img_aabb.png">Guess a number</a>
+                                        <p class="project_descript">A little game(Bulls and Cows 猜數字). </p>
                                         <p class="title_inCol">Tools</p>
+                                        <img class="project_icon" src="assets/icon/icon_python.png" title="Python">
+                                        <img class="project_icon" src="assets/icon/icon_flask.png" title="Flask">
                                         <img class="project_icon" src="assets/icon/icon_html.png" title="HTML">
                                         <img class="project_icon" src="assets/icon/icon_css.jpg" title="CSS">
-                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="BootStrap">
-
+                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="Bootstrap">
                                         <p class="title_inCol" style="">Links</p>
-                                        <a class="links" href="https://github.com/peggyppp/CS50W_Project0" target="_blank">GitHub</a>
-                                        <a class="links" href="https://peggyppp.github.io/CS50W_Project0/" target="_blank">View on Web</a>
+                                        <a class="links" href="https://guess-aabb.herokuapp.com/" target="_blank">Web</a>
+                                        <a class="links" href="https://github.com/peggyppp/Project_AABB" target="_blank">GitHub</a>
+                                        <p style="height:0.5rem; margin:0px;"></p>
                                     </td>
                                 </tr>
                             </tbody>
                             </table>
                         </div>
+
+                        <div class="col-12 col-sm-6  col-md-6 project_col">
+                            <table class="table table-sm project_col_hover" data-toggle="modal" data-target="#exampleModal" data-title="Book Review System" data-description="A book review website for sign-in users submit their reviews. Using PostgreSQL and Python, Flask." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "PostgreSQL", "url":"assets/icon/icon_postgresql.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project1"}, {"name": "Demo video", "url": "https://youtu.be/cx-j0U-ZyYE"}]' data-img="assets/Projects/img_project1.png">
+                                <tbody>
+                                <tr>
+                                    <td  class="project_img_col">
+                                        <img class="project_img" src="assets/Projects/img_project1.png" alt="">    <!-- no. 4 -->
+                                    </td>
+                                
+                                    <td>
+                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Book Review System" data-description="A book review website for sign-in users submit their reviews. Using PostgreSQL and Python, Flask." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "PostgreSQL", "url":"assets/icon/icon_postgresql.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project1"}, {"name": "Demo video", "url": "https://youtu.be/cx-j0U-ZyYE"}]' data-img="assets/Projects/img_project1.png">Book Review System</a>
+                                        
+                                        <p class="project_descript">A book review website for sign-in users submit their reviews. Using PostgreSQL and Python, Flask.</p>
+                                        <p class="title_inCol">Tools</p>
+                                        <img class="project_icon" src="assets/icon/icon_python.png" title="Python">
+                                        <img class="project_icon" src="assets/icon/icon_flask.png" title="Flask">
+                                        <img class="project_icon" src="assets/icon/icon_postgresql.png" title="PostgreSQL">
+                                        <img class="project_icon" src="assets/icon/icon_html.png" title="HTML">
+                                        <img class="project_icon" src="assets/icon/icon_css.jpg" title="CSS">
+                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="Bootstrap">
+                                        <p class="title_inCol" style="">Links</p>
+                                        
+                                        <a class="links" href="https://github.com/peggyppp/CS50W_Project1" target="_blank">GitHub</a>
+                                        <a class="links" href="https://youtu.be/cx-j0U-ZyYE" target="_blank">Demo Video</a>
+                                        <p style="height:0.5rem; margin:0px;"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        
+
+                        <div class="col-12 col-sm-6  col-md-6 project_col">
+                            <table class="table table-sm project_col_hover" data-toggle="modal" data-target="#exampleModal" data-title="Have you seen?" data-description="A pure html website of introducing my cats, made with CSS and Bootstrap." data-tools='[{"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "Web", "url": "https://peggyppp.github.io/CS50W_Project0/"}]' data-img="assets/Projects/img_project0.png">
+                                <tbody>
+                                <tr>
+                                    <td  class="project_img_col">
+                                        <img class="project_img" src="assets/Projects/img_project0.png" alt="">    <!-- no. 5 -->
+                                    </td>
+                                
+                                    <td>
+                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Have you seen?" data-description="A pure html website of introducing my cats, made with CSS and Bootstrap." data-tools='[{"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/CS50W_Project2"}, {"name": "View on Web", "url": "https://peggyppp.github.io/CS50W_Project0/"}]' data-img="assets/Projects/img_project0.png">Have you seen?</a>
+                                        
+                                        <p class="project_descript">A pure html website of introducing my cats, made with CSS and Bootstrap.</p>
+                                        <p class="title_inCol">Tools</p>
+                                        <img class="project_icon" src="assets/icon/icon_html.png" title="HTML">
+                                        <img class="project_icon" src="assets/icon/icon_css.jpg" title="CSS">
+                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="Bootstrap">
+
+                                        <p class="title_inCol" style="">Links</p>
+                                        <a class="links" href="https://peggyppp.github.io/CS50W_Project0/" target="_blank">Web</a>
+                                        <a class="links" href="https://github.com/peggyppp/CS50W_Project0" target="_blank">GitHub</a>
+                                        <p style="height:0.5rem; margin:0px;"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-12 col-sm-6  col-md-6 project_col">
+                            <table class="table table-sm project_col_hover" data-toggle="modal" data-target="#exampleModal" data-title="Vsearch4web" data-description="A little service for user searching specific letters in a specific sentence. Constructed with Python, Flask and MariaDB(MySQL)." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "MySQL", "url":"assets/icon/icon_mysql.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/HF4P_Project"}, {"name": "Demo video", "url": "https://youtu.be/bYPVZrx8iuc"}]' data-img="assets/Projects/img_HF4P.png">
+                                <tbody>
+                                <tr>
+                                    <td  class="project_img_col">
+                                        <img class="project_img" src="assets/Projects/img_HF4P.png" alt="">    <!-- no. 6 -->
+                                    </td>
+                                
+                                    <td>
+                                        <a class="project_title" href="#" data-toggle="modal" data-target="#exampleModal" data-title="Vsearch4web" data-description="A little service for user searching specific letters in a specific sentence. Constructed with Python, Flask and MariaDB(MySQL)." data-tools='[{"name": "Python", "url": "assets/icon/icon_python.png"}, {"name": "Flask", "url":"assets/icon/icon_flask.png"}, {"name": "MySQL", "url":"assets/icon/icon_mysql.png"}, {"name": "HTML", "url":"assets/icon/icon_html.png"}, {"name": "CSS", "url":"assets/icon/icon_css.jpg"}, {"name": "Bootstrap", "url":"assets/icon/icon_bootstrap.png"}]' data-links='[{"name": "GitHub", "url":"https://github.com/peggyppp/HF4P_Project"}, {"name": "Demo video", "url": "https://youtu.be/bYPVZrx8iuc"}]' data-img="assets/Projects/img_HF4P.png">Vsearch4web</a>
+                                        
+                                        <p class="project_descript">A little service for user searching specific letters in a specific sentence. Constructed with Python, Flask and MariaDB(MySQL).</p>
+                                        <p class="title_inCol">Tools</p>
+                                        <img class="project_icon" src="assets/icon/icon_python.png" title="Python">
+                                        <img class="project_icon" src="assets/icon/icon_flask.png" title="Flask">
+                                        <img class="project_icon" src="assets/icon/icon_mysql.png" title="MySQL">
+                                        <img class="project_icon" src="assets/icon/icon_html.png" title="HTML">
+                                        <img class="project_icon" src="assets/icon/icon_css.jpg" title="CSS">
+                                        <img class="project_icon" src="assets/icon/icon_bootstrap.png" title="Bootstrap">
+                                        <p class="title_inCol" style="">Links</p>
+                                        
+                                        <a class="links" href="https://github.com/peggyppp/HF4P_Project" target="_blank">GitHub</a>
+                                        <a class="links" href="https://youtu.be/bYPVZrx8iuc" target="_blank">Demo Video</a>
+                                        <br><br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -256,7 +322,7 @@
                     console.log('link=', link)
                     modal.find('.modal-links').append("<a href='" +link["url"]+ "' class='project_link' target='_blank'>" + link["name"] + "</a>" + " " )
                 }
-                modal.find('#imgshow').html("<img src='"+img_src+"' class='carousel-inner img-responsive img-rounded' data-dismiss='modal'>");
+                modal.find('.imgshow').html("<img src='"+img_src+"' class='carousel-inner img-responsive img-rounded' data-dismiss='modal'>");
                 
                 
             })
